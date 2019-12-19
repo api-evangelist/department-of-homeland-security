@@ -1,0 +1,61 @@
+{
+    "name": "Department of Homeland Security",
+    "description": "<p>The U.S. Department of Homeland Security (DHS) is a cabinet department of the United States federal government, created in response to the September 11 attacks, and with the primary responsibilities of protecting the United States and its territories (including protectorates) from and responding to terrorist attacks, man-made accidents, and natural disasters. The Department of Homeland Security, and not the United States Department of the Interior, is equivalent to the Interior ministries of other countries.&nbsp;<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/400px-US_Department_of_Homeland_Security_Seal.svg.png",
+    "tags": [
+        "api provider",
+        "have api",
+        "surveillance"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/department-of-homeland-security\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Department of Homeland Security",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/400px-US_Department_of_Homeland_Security_Seal.svg.png",
+            "humanURL": "http:\/\/www.dhs.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/department-of-homeland-security-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/department-of-homeland-security-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "http:\/\/www.tsa.gov\/data\/"
+        },
+        {
+            "type": "Blog",
+            "url": "https:\/\/www.dhs.gov\/news-releases\/blog?field_news_type_tid=588"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/www.dhs.gov\/news_and_updates\/rss.xml\/blog?field_news_type_tid=588"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/www.dhs.gov\/developer"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.dhs.gov"
+        },
+        {
+            "type": "Wikipedia",
+            "url": "http:\/\/en.wikipedia.org\/wiki\/Department_of_Homeland_Security"
+        }
+    ]
+}
