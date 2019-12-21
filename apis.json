@@ -7,8 +7,8 @@
         "have api",
         "surveillance"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/department-of-homeland-security\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -22,17 +22,17 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/department-of-homeland-security-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/department-of-homeland-security-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/department-of-homeland-security\/master\/department-of-homeland-security-openapi.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Base",
             "url": "http:\/\/www.tsa.gov\/data\/"
