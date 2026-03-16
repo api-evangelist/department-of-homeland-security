@@ -24,7 +24,7 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-12-03'
-modified: '2024-12-29'
+modified: '2026-03-16'
 position: Consumer
 description: |-
 
@@ -34,5 +34,5 @@ description: |-
   regarding current alerts.
 maintainers:
   - FN: Kin Lane
-    email: info@apievangelist.com
+    email: kin@apievangelist.com
 specificationVersion: '0.19'
