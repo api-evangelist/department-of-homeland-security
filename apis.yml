@@ -5,8 +5,7 @@ url: >2-
 apis:
   - aid: department-of-homeland-security:department-of-homeland-security
     name: Department of Homeland Security
-    tags:
-      - API
+    tags: []
     humanURL: https://www.dhs.gov/ntas-api-documentation
     properties:
       - url: https://www.dhs.gov/ntas-api-documentation
