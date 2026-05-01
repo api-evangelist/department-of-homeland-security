@@ -1,0 +1,44 @@
+name: Department of Homeland Security Capabilities
+description: >-
+  Capabilities exposed by DHS public APIs and feeds, including OpenFEMA,
+  USCIS, CISA, NTAS, and the DHS Open Data Catalog.
+capabilities:
+  - name: Disaster Declaration Search
+    description: Query federally declared major disasters, emergencies, and fire management events.
+    api: department-of-homeland-security:openfema-api
+  - name: Public Assistance Awards
+    description: Retrieve funded public assistance projects by disaster, applicant, and category.
+    api: department-of-homeland-security:openfema-api
+  - name: Individual Assistance
+    description: Look up individual and household assistance program data.
+    api: department-of-homeland-security:openfema-api
+  - name: Hazard Mitigation Projects
+    description: Query hazard mitigation grant program projects.
+    api: department-of-homeland-security:openfema-api
+  - name: OData-Style Filtering
+    description: Filter, sort, paginate, and select fields via query strings.
+    api: department-of-homeland-security:openfema-api
+  - name: USCIS Case Lookup
+    description: Retrieve current status and history of a USCIS case by receipt number.
+    api: department-of-homeland-security:uscis-case-status-api
+  - name: USCIS FOIA Submission
+    description: Submit and track FOIA requests programmatically.
+    api: department-of-homeland-security:uscis-foia-api
+  - name: KEV Catalog Download
+    description: Download the latest CISA Known Exploited Vulnerabilities catalog as JSON or CSV.
+    api: department-of-homeland-security:cisa-kev-feed
+  - name: KEV Catalog Tracking
+    description: Track CVEs, vendor projects, required actions, and due dates.
+    api: department-of-homeland-security:cisa-kev-feed
+  - name: NTAS Alerts Feed
+    description: Consume current NTAS alerts and bulletins as XML.
+    api: department-of-homeland-security:ntas-feed
+  - name: Dataset Discovery
+    description: Search and discover DHS datasets on Data.gov.
+    api: department-of-homeland-security:dhs-open-data-catalog
+  - name: Dataset Download
+    description: Retrieve dataset resources via the Data.gov CKAN API.
+    api: department-of-homeland-security:dhs-open-data-catalog
+  - name: OAuth 2.0 Authentication
+    description: Authenticate USCIS API calls using OAuth 2.0 client credentials.
+    api: department-of-homeland-security:uscis-case-status-api

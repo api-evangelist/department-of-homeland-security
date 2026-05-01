@@ -1,0 +1,85 @@
+name: Department of Homeland Security Vocabulary
+description: >-
+  Shared vocabulary of terms used across DHS public APIs and feeds, including
+  OpenFEMA, USCIS, CISA, NTAS, and the DHS Open Data Catalog.
+terms:
+  - term: DHS
+    definition: >-
+      The U.S. Department of Homeland Security, the cabinet department
+      responsible for domestic security, immigration, and disaster response.
+  - term: FEMA
+    definition: >-
+      The Federal Emergency Management Agency, the DHS component that
+      coordinates federal disaster response and publishes OpenFEMA datasets.
+  - term: OpenFEMA
+    definition: >-
+      FEMA's free, no-key REST API and dataset library exposing more than 70
+      data products related to disasters and federal assistance.
+  - term: Disaster Declaration
+    definition: >-
+      A federally declared major disaster, emergency, or fire management
+      assistance event recorded in OpenFEMA.
+  - term: Public Assistance
+    definition: >-
+      A FEMA grant program that funds disaster response and recovery for
+      state and local governments, recorded in OpenFEMA.
+  - term: USCIS
+    definition: >-
+      U.S. Citizenship and Immigration Services, the DHS component
+      administering immigration and naturalization benefits.
+  - term: Case Status
+    definition: >-
+      The current processing state of a USCIS case, retrievable by receipt
+      number through Case Status Online and the Case Status API.
+  - term: Receipt Number
+    definition: >-
+      A unique identifier for a USCIS case used to look up status and
+      history.
+  - term: FOIA
+    definition: >-
+      The Freedom of Information Act under which the USCIS FOIA API accepts
+      and tracks requests.
+  - term: CISA
+    definition: >-
+      The Cybersecurity and Infrastructure Security Agency, the DHS component
+      responsible for civilian cyber defense.
+  - term: KEV Catalog
+    definition: >-
+      CISA's Known Exploited Vulnerabilities catalog of CVEs known to be
+      actively exploited in the wild, published as JSON and CSV.
+  - term: CVE
+    definition: >-
+      A Common Vulnerabilities and Exposures identifier referenced in the
+      CISA KEV catalog.
+  - term: Required Action
+    definition: >-
+      The remediation action federal civilian agencies must take for a KEV
+      entry by its due date.
+  - term: NTAS
+    definition: >-
+      The National Terrorism Advisory System through which DHS issues alerts
+      and bulletins consumable as XML feeds.
+  - term: TSA
+    definition: >-
+      The Transportation Security Administration, the DHS component that
+      secures U.S. aviation and surface transportation.
+  - term: CBP
+    definition: >-
+      U.S. Customs and Border Protection, the DHS component responsible for
+      border security and trade.
+  - term: ICE
+    definition: >-
+      U.S. Immigration and Customs Enforcement, the DHS component focused on
+      transnational crime and immigration enforcement.
+  - term: USCG
+    definition: >-
+      The U.S. Coast Guard, the DHS service responsible for maritime safety,
+      security, and stewardship.
+  - term: OHSS
+    definition: >-
+      The Office of Homeland Security Statistics, the DHS office that
+      publishes immigration and homeland security statistics.
+  - term: Dataset
+    definition: >-
+      A collection of related data files published on data.gov or a DHS
+      catalog with metadata and documentation.

@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dhs": "https://www.dhs.gov/",
+    "DisasterDeclaration": {
+      "@id": "https://schema.org/Event",
+      "@context": {
+        "disasterNumber": "https://schema.org/identifier",
+        "state": "https://schema.org/addressRegion",
+        "incidentType": "https://schema.org/category",
+        "declarationDate": "https://schema.org/startDate",
+        "title": "https://schema.org/name"
+      }
+    },
+    "PublicAssistance": {
+      "@id": "dhs:fema/public-assistance",
+      "@context": {
+        "applicantId": "https://schema.org/identifier",
+        "disasterNumber": "https://schema.org/about",
+        "obligatedAmount": "https://schema.org/amount",
+        "category": "https://schema.org/category"
+      }
+    },
+    "ImmigrationCase": {
+      "@id": "dhs:uscis/case",
+      "@context": {
+        "receiptNumber": "https://schema.org/identifier",
+        "formType": "https://schema.org/category",
+        "status": "https://schema.org/actionStatus",
+        "lastUpdated": "https://schema.org/dateModified"
+      }
+    },
+    "FOIARequest": {
+      "@id": "dhs:uscis/foia",
+      "@context": {
+        "requestNumber": "https://schema.org/identifier",
+        "subject": "https://schema.org/about",
+        "status": "https://schema.org/actionStatus",
+        "submittedDate": "https://schema.org/dateSubmitted"
+      }
+    },
+    "Vulnerability": {
+      "@id": "dhs:cisa/kev",
+      "@context": {
+        "cveID": "https://schema.org/identifier",
+        "vendorProject": "https://schema.org/manufacturer",
+        "product": "https://schema.org/Product",
+        "vulnerabilityName": "https://schema.org/name",
+        "dateAdded": "https://schema.org/dateCreated",
+        "shortDescription": "https://schema.org/description",
+        "requiredAction": "https://schema.org/action",
+        "dueDate": "https://schema.org/expires",
+        "knownRansomwareCampaignUse": "https://schema.org/keywords"
+      }
+    },
+    "NTASAlert": {
+      "@id": "dhs:ntas",
+      "@context": {
+        "id": "https://schema.org/identifier",
+        "title": "https://schema.org/name",
+        "summary": "https://schema.org/description",
+        "issuedAt": "https://schema.org/dateIssued",
+        "expiresAt": "https://schema.org/expires"
+      }
+    }
+  }
+}
