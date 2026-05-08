@@ -57,6 +57,8 @@ apis:
         url: https://www.fema.gov/about/openfema/data-sets
       - type: Changelog
         url: https://www.fema.gov/about/openfema/changelog
+      - type: OpenAPI
+        url: openapi/department-of-homeland-security-openapi.yml
     contact:
       - FN: OpenFEMA
         email: openfema@fema.dhs.gov
