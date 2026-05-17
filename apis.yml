@@ -26,7 +26,7 @@ url: >-
 created: '2024-12-03'
 modified: '2026-04-28'
 specificationVersion: '0.19'
-xType: government
+kind: government
 position: Producer
 access: Public
 apis:
@@ -55,7 +55,7 @@ apis:
         url: https://www.fema.gov/about/openfema/developer-resources
       - type: Datasets
         url: https://www.fema.gov/about/openfema/data-sets
-      - type: Changelog
+      - type: ChangeLog
         url: https://www.fema.gov/about/openfema/changelog
       - type: OpenAPI
         url: openapi/department-of-homeland-security-openapi.yml
@@ -219,9 +219,9 @@ common:
     url: https://www.dhs.gov/privacy-office
   - type: Contact
     url: https://www.dhs.gov/contact-us
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/cisagov
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/department-of-homeland-security-context.jsonld
   - type: Vocabulary
     url: vocabulary/department-of-homeland-security-vocabulary.yml
