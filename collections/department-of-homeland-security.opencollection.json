@@ -1,0 +1,546 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenFEMA API",
+    "version": "2"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Disaster Declarations Summaries",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$select",
+            "value": "",
+            "type": "query",
+            "description": "Comma-separated list of fields to return."
+          },
+          {
+            "name": "$orderby",
+            "value": "",
+            "type": "query",
+            "description": "Sort expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$inlinecount",
+            "value": "",
+            "type": "query",
+            "description": "Include total record count."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Federally declared disasters from 1953 forward."
+    },
+    {
+      "info": {
+        "name": "FEMA Web Disaster Summaries",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v2/FemaWebDisasterSummaries",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "High-level summary information for declared disasters."
+    },
+    {
+      "info": {
+        "name": "Hazard Mitigation Grants",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v2/HazardMitigationGrants",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Hazard Mitigation Grant Program project funding records."
+    },
+    {
+      "info": {
+        "name": "Housing Assistance to Owners",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/HousingAssistanceOwners",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Individual assistance housing data for homeowners."
+    },
+    {
+      "info": {
+        "name": "Housing Assistance to Renters",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/HousingAssistanceRenters",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Individual assistance housing data for renters."
+    },
+    {
+      "info": {
+        "name": "IHP Valid Registrations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/IndividualsAndHouseholdsProgramValidRegistrations",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Applicant-level Individuals and Households Program registrations."
+    },
+    {
+      "info": {
+        "name": "Public Assistance Funded Project Details",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/PublicAssistanceFundedProjectsDetails",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Project worksheet details for Public Assistance grants."
+    },
+    {
+      "info": {
+        "name": "Public Assistance Applicants",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/PublicAssistanceApplicants",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Applicant-level summary records for Public Assistance grants."
+    },
+    {
+      "info": {
+        "name": "Mission Assignments",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/MissionAssignments",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "Federal agency mission assignments issued by FEMA."
+    },
+    {
+      "info": {
+        "name": "Emergency Management Performance Grants",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/EmergencyManagementPerformanceGrants",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "State and local emergency preparedness grant recipients."
+    },
+    {
+      "info": {
+        "name": "FEMA Regions",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v2/FemaRegions",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "FEMA regional headquarters and geographic boundaries."
+    },
+    {
+      "info": {
+        "name": "NFIP Claims",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v1/FimaNfipClaims",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "National Flood Insurance Program claim transactions."
+    },
+    {
+      "info": {
+        "name": "NFIP Policies",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v2/FimaNfipPolicies",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "National Flood Insurance Program policy transactions."
+    },
+    {
+      "info": {
+        "name": "Hazard Mitigation Assistance Projects",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://www.fema.gov/api/open/v3/HazardMitigationAssistanceProjects",
+        "params": [
+          {
+            "name": "$filter",
+            "value": "",
+            "type": "query",
+            "description": "OData filter expression."
+          },
+          {
+            "name": "$top",
+            "value": "",
+            "type": "query",
+            "description": "Maximum records to return per page."
+          },
+          {
+            "name": "$skip",
+            "value": "",
+            "type": "query",
+            "description": "Records to skip for pagination."
+          },
+          {
+            "name": "$format",
+            "value": "",
+            "type": "query",
+            "description": "Response format."
+          }
+        ]
+      },
+      "docs": "HMA project applications and awards."
+    }
+  ],
+  "bundled": true
+}
