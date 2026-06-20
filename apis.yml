@@ -7,7 +7,7 @@ description: >-
   Known Exploited Vulnerabilities catalog, the National Terrorism Advisory System (NTAS) feed, and the DHS Open Data
   Catalog.
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - CISA
   - Cybersecurity
@@ -35,7 +35,7 @@ apis:
       assistance program data. The API is free, requires no API key, and supports OData-style query string parameters
       for filtering, sorting, pagination, and field selection. Default page size is 1,000 records up to a maximum of
       10,000.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.fema.gov/about/openfema
     baseURL: https://www.fema.gov/api/open
     tags:
@@ -64,7 +64,7 @@ apis:
       The USCIS Case Status API provides programmatic access to the same Case Status Online lookup that immigration
       applicants use, allowing authorized partners to retrieve the current status and history of a USCIS case by receipt
       number. The API uses OAuth 2.0 client credentials and is published through the USCIS Developer Portal.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.uscis.gov/api/case-status
     baseURL: https://api.uscis.gov
     tags:
@@ -87,7 +87,7 @@ apis:
       The USCIS FOIA Request and Status API allows partners to submit Freedom of Information Act requests
       programmatically and check the status of submitted requests. It is published through the USCIS Developer Portal
       using OAuth 2.0.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.uscis.gov/api/foia-request-and-status
     baseURL: https://api.uscis.gov
     tags:
@@ -108,7 +108,7 @@ apis:
       The CISA Known Exploited Vulnerabilities (KEV) catalog is a curated list of vulnerabilities that have been
       actively exploited in the wild. The catalog is published as a JSON and CSV feed by the Cybersecurity and
       Infrastructure Security Agency (CISA), and is mirrored on GitHub for easy programmatic access.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
     baseURL: https://www.cisa.gov/sites/default/files/feeds
     tags:
@@ -134,7 +134,7 @@ apis:
     description: >-
       The National Terrorism Advisory System (NTAS) feed publishes current terrorism alerts and bulletins issued by DHS
       as XML files. Developers can consume the feed to surface advisory content in their own applications and web pages.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.dhs.gov/ntas-api-documentation
     baseURL: https://www.dhs.gov
     tags:
@@ -156,7 +156,7 @@ apis:
       The DHS Open Data Catalog publishes datasets across the Department's mission areas (immigration, law enforcement,
       emergency management, cybersecurity, infrastructure protection, screening, and maritime). Datasets are also
       available via Data.gov's CKAN-compatible API.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.dhs.gov/data
     baseURL: https://catalog.data.gov/api/3
     tags:
