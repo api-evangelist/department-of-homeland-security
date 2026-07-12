@@ -176,6 +176,8 @@ apis:
       - FN: DHS Open Data
         url: https://www.dhs.gov/data
 common:
+  - type: DomainSecurity
+    url: security/department-of-homeland-security-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/us-department-of-homeland-security
   - type: Website
@@ -216,6 +218,8 @@ common:
     url: vocabulary/department-of-homeland-security-vocabulary.yml
   - type: Capabilities
     url: capabilities/department-of-homeland-security-capabilities.yml
+  - url: https://www.dhs.gov/rss.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
