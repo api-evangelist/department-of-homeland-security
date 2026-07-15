@@ -176,6 +176,8 @@ apis:
       - FN: DHS Open Data
         url: https://www.dhs.gov/data
 common:
+  - type: AgenticAccess
+    url: agentic-access/department-of-homeland-security-agentic-access.yml
   - type: DomainSecurity
     url: security/department-of-homeland-security-domain-security.yml
   - type: LinkedIn

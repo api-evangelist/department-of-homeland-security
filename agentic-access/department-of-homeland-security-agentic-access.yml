@@ -1,0 +1,154 @@
+generated: '2026-07-15'
+method: generated
+source: openapi/department-of-homeland-security-openapi.yml
+description: Recommended x-agentic-access execution contracts, classified heuristically from
+  the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
+  audience per deployment. See research/curity/agentic-governance/.
+summary:
+  operations: 14
+  by_action_class:
+    connected: 14
+  by_consequence:
+    read: 14
+  human_in_the_loop_required: 0
+operations:
+- path: /v2/DisasterDeclarationsSummaries
+  method: get
+  operationId: listDisasterDeclarationsSummaries
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v2/FemaWebDisasterSummaries
+  method: get
+  operationId: listFemaWebDisasterSummaries
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v2/HazardMitigationGrants
+  method: get
+  operationId: listHazardMitigationGrants
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/HousingAssistanceOwners
+  method: get
+  operationId: listHousingAssistanceOwners
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/HousingAssistanceRenters
+  method: get
+  operationId: listHousingAssistanceRenters
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/IndividualsAndHouseholdsProgramValidRegistrations
+  method: get
+  operationId: listIHPValidRegistrations
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/PublicAssistanceFundedProjectsDetails
+  method: get
+  operationId: listPublicAssistanceFundedProjectsDetails
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/PublicAssistanceApplicants
+  method: get
+  operationId: listPublicAssistanceApplicants
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/MissionAssignments
+  method: get
+  operationId: listMissionAssignments
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/EmergencyManagementPerformanceGrants
+  method: get
+  operationId: listEmergencyManagementPerformanceGrants
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v2/FemaRegions
+  method: get
+  operationId: listFemaRegions
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v1/FimaNfipClaims
+  method: get
+  operationId: listFimaNfipClaims
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v2/FimaNfipPolicies
+  method: get
+  operationId: listFimaNfipPolicies
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v3/HazardMitigationAssistanceProjects
+  method: get
+  operationId: listHazardMitigationAssistanceProjects
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
