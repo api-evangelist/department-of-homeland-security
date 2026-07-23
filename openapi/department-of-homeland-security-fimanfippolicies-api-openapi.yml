@@ -1,0 +1,71 @@
+openapi: 3.1.0
+info:
+  title: OpenFEMA DisasterDeclarationsSummaries FimaNfipPolicies API
+  description: The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.
+  version: '2'
+servers:
+- url: https://www.fema.gov/api/open
+  description: OpenFEMA API
+tags:
+- name: FimaNfipPolicies
+paths:
+  /v2/FimaNfipPolicies:
+    get:
+      summary: NFIP Policies
+      description: National Flood Insurance Program policy transactions.
+      operationId: listFimaNfipPolicies
+      parameters:
+      - $ref: '#/components/parameters/Filter'
+      - $ref: '#/components/parameters/Top'
+      - $ref: '#/components/parameters/Skip'
+      - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+      tags:
+      - FimaNfipPolicies
+components:
+  parameters:
+    Format:
+      name: $format
+      in: query
+      schema:
+        type: string
+        enum:
+        - json
+        - csv
+        - jsona
+        - geojson
+      description: Response format.
+    Skip:
+      name: $skip
+      in: query
+      schema:
+        type: integer
+      description: Records to skip for pagination.
+    Filter:
+      name: $filter
+      in: query
+      schema:
+        type: string
+      description: OData filter expression.
+    Top:
+      name: $top
+      in: query
+      schema:
+        type: integer
+      description: Maximum records to return per page.
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true
+x-generated-from: https://www.fema.gov/about/openfema/api
+x-generated-by: claude-crawl-2026-05-08
