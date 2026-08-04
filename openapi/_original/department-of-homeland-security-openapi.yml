@@ -1,0 +1,310 @@
+openapi: 3.1.0
+info:
+  title: OpenFEMA API
+  description: >-
+    The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides
+    public, read-only access to disaster, mitigation, and assistance datasets.
+    All endpoints support common OpenFEMA query parameters including $filter,
+    $select, $orderby, $top, $skip, $inlinecount, and $format.
+  version: "2"
+x-generated-from: https://www.fema.gov/about/openfema/api
+x-generated-by: claude-crawl-2026-05-08
+servers:
+  - url: https://www.fema.gov/api/open
+    description: OpenFEMA API
+paths:
+  /v2/DisasterDeclarationsSummaries:
+    get:
+      summary: Disaster Declarations Summaries
+      description: Federally declared disasters from 1953 forward.
+      operationId: listDisasterDeclarationsSummaries
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Select'
+        - $ref: '#/components/parameters/OrderBy'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/InlineCount'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v2/FemaWebDisasterSummaries:
+    get:
+      summary: FEMA Web Disaster Summaries
+      description: High-level summary information for declared disasters.
+      operationId: listFemaWebDisasterSummaries
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v2/HazardMitigationGrants:
+    get:
+      summary: Hazard Mitigation Grants
+      description: Hazard Mitigation Grant Program project funding records.
+      operationId: listHazardMitigationGrants
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/HousingAssistanceOwners:
+    get:
+      summary: Housing Assistance to Owners
+      description: Individual assistance housing data for homeowners.
+      operationId: listHousingAssistanceOwners
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/HousingAssistanceRenters:
+    get:
+      summary: Housing Assistance to Renters
+      description: Individual assistance housing data for renters.
+      operationId: listHousingAssistanceRenters
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/IndividualsAndHouseholdsProgramValidRegistrations:
+    get:
+      summary: IHP Valid Registrations
+      description: Applicant-level Individuals and Households Program registrations.
+      operationId: listIHPValidRegistrations
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/PublicAssistanceFundedProjectsDetails:
+    get:
+      summary: Public Assistance Funded Project Details
+      description: Project worksheet details for Public Assistance grants.
+      operationId: listPublicAssistanceFundedProjectsDetails
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/PublicAssistanceApplicants:
+    get:
+      summary: Public Assistance Applicants
+      description: Applicant-level summary records for Public Assistance grants.
+      operationId: listPublicAssistanceApplicants
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/MissionAssignments:
+    get:
+      summary: Mission Assignments
+      description: Federal agency mission assignments issued by FEMA.
+      operationId: listMissionAssignments
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/EmergencyManagementPerformanceGrants:
+    get:
+      summary: Emergency Management Performance Grants
+      description: State and local emergency preparedness grant recipients.
+      operationId: listEmergencyManagementPerformanceGrants
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v2/FemaRegions:
+    get:
+      summary: FEMA Regions
+      description: FEMA regional headquarters and geographic boundaries.
+      operationId: listFemaRegions
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v1/FimaNfipClaims:
+    get:
+      summary: NFIP Claims
+      description: National Flood Insurance Program claim transactions.
+      operationId: listFimaNfipClaims
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v2/FimaNfipPolicies:
+    get:
+      summary: NFIP Policies
+      description: National Flood Insurance Program policy transactions.
+      operationId: listFimaNfipPolicies
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+  /v3/HazardMitigationAssistanceProjects:
+    get:
+      summary: Hazard Mitigation Assistance Projects
+      description: HMA project applications and awards.
+      operationId: listHazardMitigationAssistanceProjects
+      parameters:
+        - $ref: '#/components/parameters/Filter'
+        - $ref: '#/components/parameters/Top'
+        - $ref: '#/components/parameters/Skip'
+        - $ref: '#/components/parameters/Format'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatasetResponse'
+components:
+  parameters:
+    Filter:
+      name: $filter
+      in: query
+      schema:
+        type: string
+      description: OData filter expression.
+    Select:
+      name: $select
+      in: query
+      schema:
+        type: string
+      description: Comma-separated list of fields to return.
+    OrderBy:
+      name: $orderby
+      in: query
+      schema:
+        type: string
+      description: Sort expression.
+    Top:
+      name: $top
+      in: query
+      schema:
+        type: integer
+      description: Maximum records to return per page.
+    Skip:
+      name: $skip
+      in: query
+      schema:
+        type: integer
+      description: Records to skip for pagination.
+    InlineCount:
+      name: $inlinecount
+      in: query
+      schema:
+        type: string
+        enum: [allpages, none]
+      description: Include total record count.
+    Format:
+      name: $format
+      in: query
+      schema:
+        type: string
+        enum: [json, csv, jsona, geojson]
+      description: Response format.
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true

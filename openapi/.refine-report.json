@@ -1,0 +1,40 @@
+{
+  "provider": "department-of-homeland-security",
+  "sources": [
+    "department-of-homeland-security-disasterdeclarationssummaries-api-openapi.yml",
+    "department-of-homeland-security-emergencymanagementperformancegrants-api-openapi.yml",
+    "department-of-homeland-security-femaregions-api-openapi.yml",
+    "department-of-homeland-security-femawebdisastersummaries-api-openapi.yml",
+    "department-of-homeland-security-fimanfipclaims-api-openapi.yml",
+    "department-of-homeland-security-fimanfippolicies-api-openapi.yml",
+    "department-of-homeland-security-hazardmitigationassistanceprojects-api-openapi.yml",
+    "department-of-homeland-security-hazardmitigationgrants-api-openapi.yml",
+    "department-of-homeland-security-housingassistanceowners-api-openapi.yml",
+    "department-of-homeland-security-housingassistancerenters-api-openapi.yml",
+    "department-of-homeland-security-individualsandhouseholdsprogramvalidregistrations-api-openapi.yml",
+    "department-of-homeland-security-missionassignments-api-openapi.yml",
+    "department-of-homeland-security-publicassistanceapplicants-api-openapi.yml",
+    "department-of-homeland-security-publicassistancefundedprojectsdetails-api-openapi.yml"
+  ],
+  "outputs": [
+    "department-of-homeland-security-disasterdeclarationssummaries-api-openapi.yml",
+    "department-of-homeland-security-emergencymanagementperformancegrants-api-openapi.yml",
+    "department-of-homeland-security-femaregions-api-openapi.yml",
+    "department-of-homeland-security-femawebdisastersummaries-api-openapi.yml",
+    "department-of-homeland-security-fimanfipclaims-api-openapi.yml",
+    "department-of-homeland-security-fimanfippolicies-api-openapi.yml",
+    "department-of-homeland-security-hazardmitigationassistanceprojects-api-openapi.yml",
+    "department-of-homeland-security-hazardmitigationgrants-api-openapi.yml",
+    "department-of-homeland-security-housingassistanceowners-api-openapi.yml",
+    "department-of-homeland-security-housingassistancerenters-api-openapi.yml",
+    "department-of-homeland-security-individualsandhouseholdsprogramvalidregistrations-api-openapi.yml",
+    "department-of-homeland-security-missionassignments-api-openapi.yml",
+    "department-of-homeland-security-publicassistanceapplicants-api-openapi.yml",
+    "department-of-homeland-security-publicassistancefundedprojectsdetails-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
