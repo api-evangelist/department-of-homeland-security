@@ -485,8 +485,6 @@ common:
     url: json-ld/department-of-homeland-security-context.jsonld
   - type: Vocabulary
     url: vocabulary/department-of-homeland-security-vocabulary.yml
-  - type: Capabilities
-    url: capabilities/department-of-homeland-security-capabilities.yml
   - url: https://www.dhs.gov/rss.xml
     type: Blog
 maintainers:
