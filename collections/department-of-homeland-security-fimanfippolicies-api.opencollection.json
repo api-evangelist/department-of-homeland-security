@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenFEMA DisasterDeclarationsSummaries FimaNfipPolicies API",
+    "version": "2"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "FimaNfipPolicies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "NFIP Policies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.fema.gov/api/open/v2/FimaNfipPolicies",
+            "params": [
+              {
+                "name": "$filter",
+                "value": "",
+                "type": "query",
+                "description": "OData filter expression."
+              },
+              {
+                "name": "$top",
+                "value": "",
+                "type": "query",
+                "description": "Maximum records to return per page."
+              },
+              {
+                "name": "$skip",
+                "value": "",
+                "type": "query",
+                "description": "Records to skip for pagination."
+              },
+              {
+                "name": "$format",
+                "value": "",
+                "type": "query",
+                "description": "Response format."
+              }
+            ]
+          },
+          "docs": "National Flood Insurance Program policy transactions."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

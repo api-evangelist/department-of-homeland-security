@@ -1,0 +1,146 @@
+{
+  "item": [
+    {
+      "id": "615a8140-e95f-4ec0-867a-e78f893a8d05",
+      "name": "FemaRegions",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2f57bef3-dc07-4dff-8467-3b9aec408459",
+          "name": "FEMA Regions",
+          "request": {
+            "name": "FEMA Regions",
+            "description": {
+              "content": "FEMA regional headquarters and geographic boundaries.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v2",
+                "FemaRegions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "$filter",
+                  "value": "<string>",
+                  "description": "OData filter expression."
+                },
+                {
+                  "disabled": false,
+                  "key": "$top",
+                  "value": "<integer>",
+                  "description": "Maximum records to return per page."
+                },
+                {
+                  "disabled": false,
+                  "key": "$skip",
+                  "value": "<integer>",
+                  "description": "Records to skip for pagination."
+                },
+                {
+                  "disabled": false,
+                  "key": "$format",
+                  "value": "<string>",
+                  "description": "Response format."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "09664a78-a095-4a38-841b-1090602b6591",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "FemaRegions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "$filter",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$top",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$skip",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"metadata\": {\n    \"key_0\": true\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.fema.gov/api/open",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "94ab87f0-0764-4494-b62d-1fe872e9358a",
+    "name": "OpenFEMA DisasterDeclarationsSummaries FemaRegions API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.",
+      "type": "text/plain"
+    }
+  }
+}

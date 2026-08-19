@@ -1,0 +1,176 @@
+{
+  "item": [
+    {
+      "id": "2d58e0c9-b3f6-4d02-8e76-9aa510b7791c",
+      "name": "DisasterDeclarationsSummaries",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e78356e6-0586-475e-a028-bb4fa07c7561",
+          "name": "Disaster Declarations Summaries",
+          "request": {
+            "name": "Disaster Declarations Summaries",
+            "description": {
+              "content": "Federally declared disasters from 1953 forward.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v2",
+                "DisasterDeclarationsSummaries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "$filter",
+                  "value": "<string>",
+                  "description": "OData filter expression."
+                },
+                {
+                  "disabled": false,
+                  "key": "$select",
+                  "value": "<string>",
+                  "description": "Comma-separated list of fields to return."
+                },
+                {
+                  "disabled": false,
+                  "key": "$orderby",
+                  "value": "<string>",
+                  "description": "Sort expression."
+                },
+                {
+                  "disabled": false,
+                  "key": "$top",
+                  "value": "<integer>",
+                  "description": "Maximum records to return per page."
+                },
+                {
+                  "disabled": false,
+                  "key": "$skip",
+                  "value": "<integer>",
+                  "description": "Records to skip for pagination."
+                },
+                {
+                  "disabled": false,
+                  "key": "$inlinecount",
+                  "value": "<string>",
+                  "description": "Include total record count."
+                },
+                {
+                  "disabled": false,
+                  "key": "$format",
+                  "value": "<string>",
+                  "description": "Response format."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "02481fb0-f9f1-45bc-9632-439eeaafceea",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "DisasterDeclarationsSummaries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "$filter",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$select",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$orderby",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$top",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$skip",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$inlinecount",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"metadata\": {\n    \"key_0\": true,\n    \"key_1\": 6985,\n    \"key_2\": 6797.144859492169\n  },\n  \"key_0\": 6795.519653822768\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.fema.gov/api/open",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9aeeea1d-0ae1-4649-a655-11da287d0e1f",
+    "name": "OpenFEMA DisasterDeclarationsSummaries API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.",
+      "type": "text/plain"
+    }
+  }
+}

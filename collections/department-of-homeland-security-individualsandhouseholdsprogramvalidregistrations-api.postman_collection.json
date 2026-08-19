@@ -1,0 +1,146 @@
+{
+  "item": [
+    {
+      "id": "50984766-6f36-4f03-8237-da27009b2de3",
+      "name": "IndividualsAndHouseholdsProgramValidRegistrations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9ca5aa5e-1fcc-4603-b012-9f0f991de000",
+          "name": "IHP Valid Registrations",
+          "request": {
+            "name": "IHP Valid Registrations",
+            "description": {
+              "content": "Applicant-level Individuals and Households Program registrations.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v1",
+                "IndividualsAndHouseholdsProgramValidRegistrations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "$filter",
+                  "value": "<string>",
+                  "description": "OData filter expression."
+                },
+                {
+                  "disabled": false,
+                  "key": "$top",
+                  "value": "<integer>",
+                  "description": "Maximum records to return per page."
+                },
+                {
+                  "disabled": false,
+                  "key": "$skip",
+                  "value": "<integer>",
+                  "description": "Records to skip for pagination."
+                },
+                {
+                  "disabled": false,
+                  "key": "$format",
+                  "value": "<string>",
+                  "description": "Response format."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e9549811-6976-4a78-801b-0b09cf70896a",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "IndividualsAndHouseholdsProgramValidRegistrations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "$filter",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$top",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$skip",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"metadata\": {\n    \"key_0\": 8704.637385681408,\n    \"key_1\": 8179\n  },\n  \"key_0\": 1976.2556228836258\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.fema.gov/api/open",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "ffc907a1-1738-42b6-9381-9008c76a96bb",
+    "name": "OpenFEMA DisasterDeclarationsSummaries IndividualsAndHouseholdsProgramValidRegistrations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "item": [
+    {
+      "id": "8fea9878-1c17-4641-9670-78cdd139ee38",
+      "name": "PublicAssistanceApplicants",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "4e10a340-164b-468d-99f5-e91888dbde04",
+          "name": "Public Assistance Applicants",
+          "request": {
+            "name": "Public Assistance Applicants",
+            "description": {
+              "content": "Applicant-level summary records for Public Assistance grants.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v1",
+                "PublicAssistanceApplicants"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "$filter",
+                  "value": "<string>",
+                  "description": "OData filter expression."
+                },
+                {
+                  "disabled": false,
+                  "key": "$top",
+                  "value": "<integer>",
+                  "description": "Maximum records to return per page."
+                },
+                {
+                  "disabled": false,
+                  "key": "$skip",
+                  "value": "<integer>",
+                  "description": "Records to skip for pagination."
+                },
+                {
+                  "disabled": false,
+                  "key": "$format",
+                  "value": "<string>",
+                  "description": "Response format."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d724d9fb-e570-476a-a3bc-4d1ffa07b964",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "PublicAssistanceApplicants"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "$filter",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$top",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$skip",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"metadata\": {\n    \"key_0\": \"string\",\n    \"key_1\": 6329,\n    \"key_2\": \"string\",\n    \"key_3\": 1518.1147032184538\n  },\n  \"key_0\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.fema.gov/api/open",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "41f13716-e001-404b-b0c8-79a5d4327424",
+    "name": "OpenFEMA DisasterDeclarationsSummaries PublicAssistanceApplicants API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.",
+      "type": "text/plain"
+    }
+  }
+}

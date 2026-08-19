@@ -1,0 +1,146 @@
+{
+  "item": [
+    {
+      "id": "a2a667b2-0bb7-4ba2-b1ca-88187da43476",
+      "name": "HousingAssistanceOwners",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "12cbfeb1-621f-46a9-a873-bb131d20dadc",
+          "name": "Housing Assistance to Owners",
+          "request": {
+            "name": "Housing Assistance to Owners",
+            "description": {
+              "content": "Individual assistance housing data for homeowners.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "v1",
+                "HousingAssistanceOwners"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "$filter",
+                  "value": "<string>",
+                  "description": "OData filter expression."
+                },
+                {
+                  "disabled": false,
+                  "key": "$top",
+                  "value": "<integer>",
+                  "description": "Maximum records to return per page."
+                },
+                {
+                  "disabled": false,
+                  "key": "$skip",
+                  "value": "<integer>",
+                  "description": "Records to skip for pagination."
+                },
+                {
+                  "disabled": false,
+                  "key": "$format",
+                  "value": "<string>",
+                  "description": "Response format."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f77738cb-737b-49bf-8e34-9596c72996dc",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v1",
+                    "HousingAssistanceOwners"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "$filter",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "$top",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$skip",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "$format",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"metadata\": {\n    \"key_0\": 7392.023784193137,\n    \"key_1\": true,\n    \"key_2\": \"string\"\n  },\n  \"key_0\": 9831,\n  \"key_1\": false,\n  \"key_2\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.fema.gov/api/open",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9a12082b-8226-4019-a859-e569238ff905",
+    "name": "OpenFEMA DisasterDeclarationsSummaries HousingAssistanceOwners API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.",
+      "type": "text/plain"
+    }
+  }
+}

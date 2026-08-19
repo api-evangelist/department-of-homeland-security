@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenFEMA DisasterDeclarationsSummaries IndividualsAndHouseholdsProgramValidRegistrations API",
+    "version": "2"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "IndividualsAndHouseholdsProgramValidRegistrations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "IHP Valid Registrations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.fema.gov/api/open/v1/IndividualsAndHouseholdsProgramValidRegistrations",
+            "params": [
+              {
+                "name": "$filter",
+                "value": "",
+                "type": "query",
+                "description": "OData filter expression."
+              },
+              {
+                "name": "$top",
+                "value": "",
+                "type": "query",
+                "description": "Maximum records to return per page."
+              },
+              {
+                "name": "$skip",
+                "value": "",
+                "type": "query",
+                "description": "Records to skip for pagination."
+              },
+              {
+                "name": "$format",
+                "value": "",
+                "type": "query",
+                "description": "Response format."
+              }
+            ]
+          },
+          "docs": "Applicant-level Individuals and Households Program registrations."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

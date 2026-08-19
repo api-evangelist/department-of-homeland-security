@@ -1,0 +1,73 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenFEMA DisasterDeclarationsSummaries API",
+    "version": "2"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "DisasterDeclarationsSummaries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Disaster Declarations Summaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries",
+            "params": [
+              {
+                "name": "$filter",
+                "value": "",
+                "type": "query",
+                "description": "OData filter expression."
+              },
+              {
+                "name": "$select",
+                "value": "",
+                "type": "query",
+                "description": "Comma-separated list of fields to return."
+              },
+              {
+                "name": "$orderby",
+                "value": "",
+                "type": "query",
+                "description": "Sort expression."
+              },
+              {
+                "name": "$top",
+                "value": "",
+                "type": "query",
+                "description": "Maximum records to return per page."
+              },
+              {
+                "name": "$skip",
+                "value": "",
+                "type": "query",
+                "description": "Records to skip for pagination."
+              },
+              {
+                "name": "$inlinecount",
+                "value": "",
+                "type": "query",
+                "description": "Include total record count."
+              },
+              {
+                "name": "$format",
+                "value": "",
+                "type": "query",
+                "description": "Response format."
+              }
+            ]
+          },
+          "docs": "Federally declared disasters from 1953 forward."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
