@@ -1,0 +1,56 @@
+slug: department-of-homeland-security
+provider: Department of Homeland Security
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Public Sector & Government
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 4
+edges:
+- tag: DisasterDeclarationsSummaries
+  spec_file: department-of-homeland-security-disasterdeclarationssummaries-api-openapi.yml
+  capability_id: BC-3310.50
+  capability_id_l1: BC-3310
+  capability_name: Disaster Response and Recovery
+  confidence: 0.7
+  evidence: GET /v2/DisasterDeclarationsSummaries  listDisasterDeclarationsSummaries  Disaster Declarations
+    Summaries
+  reason: FEMA dataset of federal disaster declarations; BC-3310.50 explicitly covers 'Disaster declaration,
+    response operations'. Confidence held at 0.7 because the surface is read-only open data about declarations
+    rather than the declaration workflow itself.
+- tag: HousingAssistanceOwners
+  spec_file: department-of-homeland-security-housingassistanceowners-api-openapi.yml
+  capability_id: BC-3310.50
+  capability_id_l1: BC-3310
+  capability_name: Disaster Response and Recovery
+  confidence: 0.7
+  evidence: listHousingAssistanceOwners  Housing Assistance to Owners
+  reason: FEMA disaster Individual Assistance housing awards to homeowners; BC-3310.50 explicitly covers
+    'individual and public assistance, and long-term recovery'. Some overlap with public benefits administration
+    (BC-3230) keeps confidence at 0.7.
+- tag: HousingAssistanceRenters
+  spec_file: department-of-homeland-security-housingassistancerenters-api-openapi.yml
+  capability_id: BC-3310.50
+  capability_id_l1: BC-3310
+  capability_name: Disaster Response and Recovery
+  confidence: 0.7
+  evidence: listHousingAssistanceRenters  Housing Assistance to Renters
+  reason: Disaster housing assistance awards to renters under FEMA Individual Assistance, matching 'individual
+    and public assistance' within Disaster Response and Recovery. Benefits-administration reading (BC-3230)
+    is a secondary possibility.
+- tag: PublicAssistanceApplicants
+  spec_file: department-of-homeland-security-publicassistanceapplicants-api-openapi.yml
+  capability_id: BC-3310.50
+  capability_id_l1: BC-3310
+  capability_name: Disaster Response and Recovery
+  confidence: 0.7
+  evidence: listPublicAssistanceApplicants  Public Assistance Applicants
+  reason: FEMA Public Assistance programme applicants (state, local, tribal entities seeking disaster
+    recovery funding), matching BC-3310.50's explicit 'individual and public assistance' scope. Grants
+    framing (BC-3260) is a nearby alternative.

@@ -465,6 +465,9 @@ apis:
   - type: ChangeLog
     url: https://www.fema.gov/about/openfema/changelog
 common:
+  - type: CapabilityMap
+    url: capabilities/department-of-homeland-security-capability-edges.yml
+    name: Department of Homeland Security Business Capability Map
   - type: AgenticAccess
     url: agentic-access/department-of-homeland-security-agentic-access.yml
   - type: DomainSecurity
