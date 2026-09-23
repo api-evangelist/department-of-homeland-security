@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: OpenFEMA DisasterDeclarationsSummaries IndividualsAndHouseholdsProgramValidRegistrations API
+  title: OpenFEMA Individuals And Households Program Valid…
   description: The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.
   version: '2'
 servers:
@@ -29,6 +29,14 @@ paths:
       tags:
       - IndividualsAndHouseholdsProgramValidRegistrations
 components:
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true
   parameters:
     Format:
       name: $format
@@ -47,25 +55,17 @@ components:
       schema:
         type: integer
       description: Records to skip for pagination.
-    Filter:
-      name: $filter
-      in: query
-      schema:
-        type: string
-      description: OData filter expression.
     Top:
       name: $top
       in: query
       schema:
         type: integer
       description: Maximum records to return per page.
-  schemas:
-    DatasetResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        metadata:
-          type: object
-          additionalProperties: true
+    Filter:
+      name: $filter
+      in: query
+      schema:
+        type: string
+      description: OData filter expression.
 x-generated-from: https://www.fema.gov/about/openfema/api
 x-generated-by: claude-crawl-2026-05-08

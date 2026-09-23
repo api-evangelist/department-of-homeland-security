@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: OpenFEMA DisasterDeclarationsSummaries API
+  title: OpenFEMA Disaster Declarations Summaries API
   description: The OpenFEMA API (FEMA, U.S. Department of Homeland Security) provides public, read-only access to disaster, mitigation, and assistance datasets. All endpoints support common OpenFEMA query parameters including $filter, $select, $orderby, $top, $skip, $inlinecount, and $format.
   version: '2'
 servers:
@@ -32,16 +32,15 @@ paths:
       tags:
       - DisasterDeclarationsSummaries
 components:
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true
   parameters:
-    InlineCount:
-      name: $inlinecount
-      in: query
-      schema:
-        type: string
-        enum:
-        - allpages
-        - none
-      description: Include total record count.
     Format:
       name: $format
       in: query
@@ -53,18 +52,21 @@ components:
         - jsona
         - geojson
       description: Response format.
+    InlineCount:
+      name: $inlinecount
+      in: query
+      schema:
+        type: string
+        enum:
+        - allpages
+        - none
+      description: Include total record count.
     Skip:
       name: $skip
       in: query
       schema:
         type: integer
       description: Records to skip for pagination.
-    Filter:
-      name: $filter
-      in: query
-      schema:
-        type: string
-      description: OData filter expression.
     Select:
       name: $select
       in: query
@@ -77,19 +79,17 @@ components:
       schema:
         type: integer
       description: Maximum records to return per page.
+    Filter:
+      name: $filter
+      in: query
+      schema:
+        type: string
+      description: OData filter expression.
     OrderBy:
       name: $orderby
       in: query
       schema:
         type: string
       description: Sort expression.
-  schemas:
-    DatasetResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        metadata:
-          type: object
-          additionalProperties: true
 x-generated-from: https://www.fema.gov/about/openfema/api
 x-generated-by: claude-crawl-2026-05-08
