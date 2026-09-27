@@ -32,26 +32,25 @@ paths:
       tags:
       - DisasterDeclarationsSummaries
 components:
-  schemas:
-    DatasetResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        metadata:
-          type: object
-          additionalProperties: true
   parameters:
-    Format:
-      name: $format
+    Select:
+      name: $select
       in: query
       schema:
         type: string
-        enum:
-        - json
-        - csv
-        - jsona
-        - geojson
-      description: Response format.
+      description: Comma-separated list of fields to return.
+    Filter:
+      name: $filter
+      in: query
+      schema:
+        type: string
+      description: OData filter expression.
+    Top:
+      name: $top
+      in: query
+      schema:
+        type: integer
+      description: Maximum records to return per page.
     InlineCount:
       name: $inlinecount
       in: query
@@ -67,29 +66,30 @@ components:
       schema:
         type: integer
       description: Records to skip for pagination.
-    Select:
-      name: $select
-      in: query
-      schema:
-        type: string
-      description: Comma-separated list of fields to return.
-    Top:
-      name: $top
-      in: query
-      schema:
-        type: integer
-      description: Maximum records to return per page.
-    Filter:
-      name: $filter
-      in: query
-      schema:
-        type: string
-      description: OData filter expression.
     OrderBy:
       name: $orderby
       in: query
       schema:
         type: string
       description: Sort expression.
+    Format:
+      name: $format
+      in: query
+      schema:
+        type: string
+        enum:
+        - json
+        - csv
+        - jsona
+        - geojson
+      description: Response format.
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true
 x-generated-from: https://www.fema.gov/about/openfema/api
 x-generated-by: claude-crawl-2026-05-08

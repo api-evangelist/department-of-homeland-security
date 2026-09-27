@@ -35,7 +35,7 @@ tags:
   - CISA
   - Cybersecurity
   - Disaster
-  - Federal-Government
+  - Federal Government
   - FEMA
   - Homeland Security
   - Immigration
@@ -53,6 +53,7 @@ tags_raw:
   - NTAS
   - Open Data
   - USCIS
+  - Federal-Government
 url: https://raw.githubusercontent.com/api-evangelist/department-of-homeland-security/refs/heads/main/apis.yml
 created: '2024-12-03'
 modified: '2026-05-19'
@@ -141,7 +142,6 @@ apis:
     applications and web pages.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.dhs.gov/ntas-api-documentation
-  baseURL: https://www.dhs.gov
   tags:
   - Alerts
   - NTAS
