@@ -32,46 +32,27 @@ paths:
       tags:
       - DisasterDeclarationsSummaries
 components:
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true
   parameters:
-    Select:
-      name: $select
-      in: query
-      schema:
-        type: string
-      description: Comma-separated list of fields to return.
     Filter:
       name: $filter
       in: query
       schema:
         type: string
       description: OData filter expression.
-    Top:
-      name: $top
-      in: query
-      schema:
-        type: integer
-      description: Maximum records to return per page.
-    InlineCount:
-      name: $inlinecount
-      in: query
-      schema:
-        type: string
-        enum:
-        - allpages
-        - none
-      description: Include total record count.
     Skip:
       name: $skip
       in: query
       schema:
         type: integer
       description: Records to skip for pagination.
-    OrderBy:
-      name: $orderby
-      in: query
-      schema:
-        type: string
-      description: Sort expression.
     Format:
       name: $format
       in: query
@@ -83,13 +64,32 @@ components:
         - jsona
         - geojson
       description: Response format.
-  schemas:
-    DatasetResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        metadata:
-          type: object
-          additionalProperties: true
+    InlineCount:
+      name: $inlinecount
+      in: query
+      schema:
+        type: string
+        enum:
+        - allpages
+        - none
+      description: Include total record count.
+    Top:
+      name: $top
+      in: query
+      schema:
+        type: integer
+      description: Maximum records to return per page.
+    Select:
+      name: $select
+      in: query
+      schema:
+        type: string
+      description: Comma-separated list of fields to return.
+    OrderBy:
+      name: $orderby
+      in: query
+      schema:
+        type: string
+      description: Sort expression.
 x-generated-from: https://www.fema.gov/about/openfema/api
 x-generated-by: claude-crawl-2026-05-08
