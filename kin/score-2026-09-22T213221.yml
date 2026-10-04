@@ -1,21 +1,19 @@
-# Kin Score artifact — department-of-homeland-security — 2026-08-24T171257
+# Kin Score artifact — department-of-homeland-security — 2026-09-22T213221
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
   slug: department-of-homeland-security
-  schema_version: 0.13.0
-  scored_at: '2026-08-24'
-  run_ts: 2026-08-24T171257
-  composite: 30.3
+  schema_version: 0.22.0
+  scored_at: '2026-09-22'
+  run_ts: 2026-09-22T213221
+  composite: 36.1
   band: thin
   facets:
     discoverability: 74.1
     contract_quality: 50.3
-    governance: 15.2
-    operational_transparency: 10.5
-    developer_ergonomics: 2.4
-    commercial_clarity: 28.6
     contract_governance: 15.2
+    operational_transparency: 26.3
+    developer_ergonomics: 21.4
     access_clarity: 28.6
   agent_readiness:
     score: 20.0
@@ -49,7 +47,7 @@ kin_score:
   provenance:
     agentic_access: derived
     contracts:
-      total: 14
+      total: 15
       derived: 0
       coverage: 0.0
       callable: 100.0
