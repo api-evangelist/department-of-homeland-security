@@ -32,27 +32,7 @@ paths:
       tags:
       - DisasterDeclarationsSummaries
 components:
-  schemas:
-    DatasetResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        metadata:
-          type: object
-          additionalProperties: true
   parameters:
-    Filter:
-      name: $filter
-      in: query
-      schema:
-        type: string
-      description: OData filter expression.
-    Skip:
-      name: $skip
-      in: query
-      schema:
-        type: integer
-      description: Records to skip for pagination.
     Format:
       name: $format
       in: query
@@ -64,6 +44,24 @@ components:
         - jsona
         - geojson
       description: Response format.
+    Filter:
+      name: $filter
+      in: query
+      schema:
+        type: string
+      description: OData filter expression.
+    OrderBy:
+      name: $orderby
+      in: query
+      schema:
+        type: string
+      description: Sort expression.
+    Top:
+      name: $top
+      in: query
+      schema:
+        type: integer
+      description: Maximum records to return per page.
     InlineCount:
       name: $inlinecount
       in: query
@@ -73,23 +71,25 @@ components:
         - allpages
         - none
       description: Include total record count.
-    Top:
-      name: $top
-      in: query
-      schema:
-        type: integer
-      description: Maximum records to return per page.
     Select:
       name: $select
       in: query
       schema:
         type: string
       description: Comma-separated list of fields to return.
-    OrderBy:
-      name: $orderby
+    Skip:
+      name: $skip
       in: query
       schema:
-        type: string
-      description: Sort expression.
+        type: integer
+      description: Records to skip for pagination.
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true
 x-generated-from: https://www.fema.gov/about/openfema/api
 x-generated-by: claude-crawl-2026-05-08

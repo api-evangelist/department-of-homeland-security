@@ -29,27 +29,7 @@ paths:
       tags:
       - EmergencyManagementPerformanceGrants
 components:
-  schemas:
-    DatasetResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        metadata:
-          type: object
-          additionalProperties: true
   parameters:
-    Filter:
-      name: $filter
-      in: query
-      schema:
-        type: string
-      description: OData filter expression.
-    Skip:
-      name: $skip
-      in: query
-      schema:
-        type: integer
-      description: Records to skip for pagination.
     Format:
       name: $format
       in: query
@@ -61,11 +41,31 @@ components:
         - jsona
         - geojson
       description: Response format.
+    Filter:
+      name: $filter
+      in: query
+      schema:
+        type: string
+      description: OData filter expression.
     Top:
       name: $top
       in: query
       schema:
         type: integer
       description: Maximum records to return per page.
+    Skip:
+      name: $skip
+      in: query
+      schema:
+        type: integer
+      description: Records to skip for pagination.
+  schemas:
+    DatasetResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        metadata:
+          type: object
+          additionalProperties: true
 x-generated-from: https://www.fema.gov/about/openfema/api
 x-generated-by: claude-crawl-2026-05-08
