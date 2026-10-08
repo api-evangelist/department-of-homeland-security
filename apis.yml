@@ -465,6 +465,12 @@ apis:
   - type: ChangeLog
     url: https://www.fema.gov/about/openfema/changelog
 common:
+  - type: Plans
+    url: plans/department-of-homeland-security-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/department-of-homeland-security-rate-limits.yml
+  - type: FinOps
+    url: finops/department-of-homeland-security-finops.yml
   - type: CapabilityMap
     url: capabilities/department-of-homeland-security-capability-edges.yml
     name: Department of Homeland Security Business Capability Map
