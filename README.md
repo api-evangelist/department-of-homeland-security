@@ -1,4 +1,4 @@
-# Department of Homeland Security (department-of-homeland-security)
+# Department of Homeland Security
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,190 +66,157 @@
 
 The U.S. Department of Homeland Security (DHS) is a cabinet-level federal agency responsible for protecting the nation from terrorism, securing borders, enforcing immigration law, responding to disasters, and securing cyberspace. DHS exposes APIs across its operational components, including FEMA's OpenFEMA platform, USCIS's Developer Portal, the CISA Known Exploited Vulnerabilities catalog, the National Terrorism Advisory System (NTAS) feed, and the DHS Open Data Catalog.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/department-of-homeland-security/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/department-of-homeland-security/refs/heads/main/apis.yml)
+**Areas:** CISA · Cybersecurity · Disaster · Federal Government · FEMA · Homeland Security · Immigration · NTAS · Open Data · USCIS
 
-## Scope
+## Department of Homeland Security on APIs.io
 
-- **Type:** Index
-- **Position:** Producer
-- **Access:** Public
+Everything profiled for Department of Homeland Security is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/department-of-homeland-security/](https://apis.io/providers/department-of-homeland-security/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (19)
 
-- CISA
-- Cybersecurity
-- Disaster
-- Federal Government
-- FEMA
-- Homeland Security
-- Immigration
-- NTAS
-- Open Data
-- USCIS
+- [USCIS Case Status API](https://apis.io/apis/department-of-homeland-security/uscis-case-status-api/) — The USCIS Case Status API provides programmatic access to the same Case Status Online lookup that immigration applicants use, allowing authorized partners…
+- [USCIS FOIA Request and Status API](https://apis.io/apis/department-of-homeland-security/uscis-foia-api/) — The USCIS FOIA Request and Status API allows partners to submit Freedom of Information Act requests programmatically and check the status of submitted…
+- [CISA Known Exploited Vulnerabilities Catalog Feed](https://apis.io/apis/department-of-homeland-security/cisa-kev-feed/) — The CISA Known Exploited Vulnerabilities (KEV) catalog is a curated list of vulnerabilities that have been actively exploited in the wild. The catalog is…
+- [National Terrorism Advisory System Feed](https://apis.io/apis/department-of-homeland-security/ntas-feed/) — The National Terrorism Advisory System (NTAS) feed publishes current terrorism alerts and bulletins issued by DHS as XML files. Developers can consume the…
+- [DHS Open Data Catalog](https://apis.io/apis/department-of-homeland-security/dhs-open-data-catalog/) — The DHS Open Data Catalog publishes datasets across the Department's mission areas (immigration, law enforcement, emergency management, cybersecurity,…
+- [Department of Homeland Security DisasterDeclarationsSummaries API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-disasterdeclarationssummaries-api/) — The DisasterDeclarationsSummaries API from Department of Homeland Security — 1 operation(s) for disasterdeclarationssummaries.
+- [Department of Homeland Security EmergencyManagementPerformanceGrants API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-emergencymanagementperformancegrants-api/) — The EmergencyManagementPerformanceGrants API from Department of Homeland Security — 1 operation(s) for emergencymanagementperformancegrants.
+- [Department of Homeland Security FemaRegions API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-femaregions-api/) — The FemaRegions API from Department of Homeland Security — 1 operation(s) for femaregions.
+- [Department of Homeland Security FemaWebDisasterSummaries API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-femawebdisastersummaries-api/) — The FemaWebDisasterSummaries API from Department of Homeland Security — 1 operation(s) for femawebdisastersummaries.
+- [Department of Homeland Security FimaNfipClaims API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-fimanfipclaims-api/) — The FimaNfipClaims API from Department of Homeland Security — 1 operation(s) for fimanfipclaims.
+- [Department of Homeland Security FimaNfipPolicies API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-fimanfippolicies-api/) — The FimaNfipPolicies API from Department of Homeland Security — 1 operation(s) for fimanfippolicies.
+- [Department of Homeland Security HazardMitigationAssistanceProjects API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-hazardmitigationassistanceprojects-api/) — The HazardMitigationAssistanceProjects API from Department of Homeland Security — 1 operation(s) for hazardmitigationassistanceprojects.
+- [Department of Homeland Security HazardMitigationGrants API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-hazardmitigationgrants-api/) — The HazardMitigationGrants API from Department of Homeland Security — 1 operation(s) for hazardmitigationgrants.
+- [Department of Homeland Security HousingAssistanceOwners API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-housingassistanceowners-api/) — The HousingAssistanceOwners API from Department of Homeland Security — 1 operation(s) for housingassistanceowners.
+- [Department of Homeland Security HousingAssistanceRenters API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-housingassistancerenters-api/) — The HousingAssistanceRenters API from Department of Homeland Security — 1 operation(s) for housingassistancerenters.
+- [Department of Homeland Security IndividualsAndHouseholdsProgramValidRegistrations API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-individualsandhouseholdsprogramvalidregistrations-api/) — The IndividualsAndHouseholdsProgramValidRegistrations API from Department of Homeland Security — 1 operation(s) for…
+- [Department of Homeland Security MissionAssignments API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-missionassignments-api/) — The MissionAssignments API from Department of Homeland Security — 1 operation(s) for missionassignments.
+- [Department of Homeland Security PublicAssistanceApplicants API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-publicassistanceapplicants-api/) — The PublicAssistanceApplicants API from Department of Homeland Security — 1 operation(s) for publicassistanceapplicants.
+- [Department of Homeland Security PublicAssistanceFundedProjectsDetails API](https://apis.io/apis/department-of-homeland-security/department-of-homeland-security-publicassistancefundedprojectsdetails-api/) — The PublicAssistanceFundedProjectsDetails API from Department of Homeland Security — 1 operation(s) for publicassistancefundedprojectsdetails.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### OpenFEMA API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The OpenFEMA API is FEMA's public RESTful service that exposes more than 70 datasets including disaster declarations, public assistance funded projects, individual assistance grants, hazard mitigation, and housing assistance program data. The API is free, requires no API key, and supports OData-style query string parameters for filtering, sorting, pagination, and field selection. Default page size is 1,000 records up to a maximum of 10,000.
+- [Department Of Homeland Security Agentic Access](https://apis.io/agentic-access/department-of-homeland-security/department-of-homeland-security-agentic-access/)
 
-- **Human URL:** [https://www.fema.gov/about/openfema](https://www.fema.gov/about/openfema)
-- **Base URL:** `https://www.fema.gov/api/open`
+#### JSON-LD (1)
 
-#### Tags
+Linked-data contexts for the provider's vocabulary.
 
-- Disaster
-- FEMA
-- Hazard Mitigation
-- Public Assistance
+- [Department Of Homeland Security Context](https://apis.io/jsonld/department-of-homeland-security/department-of-homeland-security-context/)
 
-#### Properties
+#### Vocabulary (1)
 
-- [Documentation](https://www.fema.gov/about/openfema/api)
-- [Developer  Resources](https://www.fema.gov/about/openfema/developer-resources)
-- [Datasets](https://www.fema.gov/about/openfema/data-sets)
-- [Changelog](https://www.fema.gov/about/openfema/changelog)
-- [OpenAPI](openapi/department-of-homeland-security-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/department-of-homeland-security.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-homeland-security.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+The provider's domain terms, defined.
 
-### USCIS Case Status API
+- [Department of Homeland Security Vocabulary](https://apis.io/vocabularies/department-of-homeland-security/department-of-homeland-security-vocabulary/)
 
-The USCIS Case Status API provides programmatic access to the same Case Status Online lookup that immigration applicants use, allowing authorized partners to retrieve the current status and history of a USCIS case by receipt number. The API uses OAuth 2.0 client credentials and is published through the USCIS Developer Portal.
+#### Collections (15)
 
-- **Human URL:** [https://developer.uscis.gov/api/case-status](https://developer.uscis.gov/api/case-status)
-- **Base URL:** `https://api.uscis.gov`
+Postman and Open Collection request collections.
 
-#### Tags
+- [OpenFEMA API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security/)
+- [OpenFEMA DisasterDeclarationsSummaries API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-disasterdeclarationssummaries-api/)
+- [OpenFEMA DisasterDeclarationsSummaries EmergencyManagementPerformanceGrants API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-emergencymanagementperformancegrants-api/)
+- [OpenFEMA DisasterDeclarationsSummaries FemaRegions API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-femaregions-api/)
+- [OpenFEMA DisasterDeclarationsSummaries FemaWebDisasterSummaries API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-femawebdisastersummaries-api/)
+- [OpenFEMA DisasterDeclarationsSummaries FimaNfipClaims API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-fimanfipclaims-api/)
+- [OpenFEMA DisasterDeclarationsSummaries FimaNfipPolicies API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-fimanfippolicies-api/)
+- [OpenFEMA DisasterDeclarationsSummaries HazardMitigationAssistanceProjects API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-hazardmitigationassistanceprojects-api/)
+- [OpenFEMA DisasterDeclarationsSummaries HazardMitigationGrants API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-hazardmitigationgrants-api/)
+- [OpenFEMA DisasterDeclarationsSummaries HousingAssistanceOwners API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-housingassistanceowners-api/)
+- [OpenFEMA DisasterDeclarationsSummaries HousingAssistanceRenters API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-housingassistancerenters-api/)
+- [OpenFEMA DisasterDeclarationsSummaries IndividualsAndHouseholdsProgramValidRegistrations API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-individualsandhouseholdsprogramvalidregistrations-api/)
+- [OpenFEMA DisasterDeclarationsSummaries MissionAssignments API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-missionassignments-api/)
+- [OpenFEMA DisasterDeclarationsSummaries PublicAssistanceApplicants API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-publicassistanceapplicants-api/)
+- [OpenFEMA DisasterDeclarationsSummaries PublicAssistanceFundedProjectsDetails API](https://apis.io/collections/department-of-homeland-security/open-department-of-homeland-security-publicassistancefundedprojectsdetails-api/)
 
-- Case Status
-- Immigration
-- USCIS
+#### Security (1)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://developer.uscis.gov/api/case-status)
-- [Portal](https://developer.uscis.gov/)
-- [Catalog](https://developer.uscis.gov/apis)
-- [Postman Collection](collections/department-of-homeland-security.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-homeland-security.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Department Of Homeland Security Domain Security](https://apis.io/security/department-of-homeland-security/department-of-homeland-security-domain-security/)
 
-### USCIS FOIA Request and Status API
+#### Plans and pricing (1)
 
-The USCIS FOIA Request and Status API allows partners to submit Freedom of Information Act requests programmatically and check the status of submitted requests. It is published through the USCIS Developer Portal using OAuth 2.0.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://developer.uscis.gov/api/foia-request-and-status](https://developer.uscis.gov/api/foia-request-and-status)
-- **Base URL:** `https://api.uscis.gov`
+- [Department Of Homeland Security Plans Pricing](https://apis.io/plans/department-of-homeland-security/department-of-homeland-security-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- FOIA
-- Immigration
-- USCIS
+Published request limits.
 
-#### Properties
+- [Department Of Homeland Security Rate Limits](https://apis.io/rate-limits/department-of-homeland-security/department-of-homeland-security-rate-limits/)
 
-- [Documentation](https://developer.uscis.gov/api/foia-request-and-status)
-- [Portal](https://developer.uscis.gov/)
-- [Postman Collection](collections/department-of-homeland-security.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-homeland-security.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### CISA Known Exploited Vulnerabilities Catalog Feed
+What the API costs to run, by operation.
 
-The CISA Known Exploited Vulnerabilities (KEV) catalog is a curated list of vulnerabilities that have been actively exploited in the wild. The catalog is published as a JSON and CSV feed by the Cybersecurity and Infrastructure Security Agency (CISA), and is mirrored on GitHub for easy programmatic access.
+- [Department Of Homeland Security Finops](https://apis.io/finops/department-of-homeland-security/department-of-homeland-security-finops/)
 
-- **Human URL:** [https://www.cisa.gov/known-exploited-vulnerabilities-catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-- **Base URL:** `https://www.cisa.gov/sites/default/files/feeds`
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- CISA
-- CVE
-- Cybersecurity
-- KEV
-- Vulnerabilities
-
-#### Properties
-
-- [Documentation](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
-- [J S O N  Feed](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json)
-- [K E V  Resources](https://www.cisa.gov/resources-tools/resources/kev-catalog)
-- [Mirror](https://github.com/cisagov/kev-data)
-- [Postman Collection](collections/department-of-homeland-security.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-homeland-security.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### National Terrorism Advisory System Feed
-
-The National Terrorism Advisory System (NTAS) feed publishes current terrorism alerts and bulletins issued by DHS as XML files. Developers can consume the feed to surface advisory content in their own applications and web pages.
-
-- **Human URL:** [https://www.dhs.gov/ntas-api-documentation](https://www.dhs.gov/ntas-api-documentation)
-- **Base URL:** `https://www.dhs.gov`
-
-#### Tags
-
-- Alerts
-- NTAS
-- Terrorism
-- XML
-
-#### Properties
-
-- [Documentation](https://www.dhs.gov/ntas-api-documentation)
-- [N T A S](https://www.dhs.gov/national-terrorism-advisory-system)
-- [Postman Collection](collections/department-of-homeland-security.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-homeland-security.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### DHS Open Data Catalog
-
-The DHS Open Data Catalog publishes datasets across the Department's mission areas (immigration, law enforcement, emergency management, cybersecurity, infrastructure protection, screening, and maritime). Datasets are also available via Data.gov's CKAN-compatible API.
-
-- **Human URL:** [https://www.dhs.gov/data](https://www.dhs.gov/data)
-- **Base URL:** `https://catalog.data.gov/api/3`
-
-#### Tags
-
-- CKAN
-- Datasets
-- Open Data
-
-#### Properties
-
-- [Documentation](https://www.dhs.gov/data)
-- [O H S S](https://ohss.dhs.gov/)
-- [Data.gov  D H S](https://catalog.data.gov/organization/dhs-gov)
-- [C K A N  Reference](https://docs.ckan.org/en/2.8/api/)
-- [Postman Collection](collections/department-of-homeland-security.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-homeland-security.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/us-department-of-homeland-security)
 - [Website](https://www.dhs.gov)
-- [Open  Data](https://www.dhs.gov/data)
-- [Office of  Homeland  Security  Statistics](https://ohss.dhs.gov/)
-- [F E M A](https://www.fema.gov)
-- [U S C I S  Developer  Portal](https://developer.uscis.gov/)
-- [C I S A](https://www.cisa.gov)
-- [T S A](https://www.tsa.gov)
-- [C B P](https://www.cbp.gov)
-- [I C E](https://www.ice.gov)
-- [Coast  Guard](https://www.uscg.mil)
-- [Secret  Service](https://www.secretservice.gov)
-- [Components](https://www.dhs.gov/operational-and-support-components)
-- [Data.gov  D H S  Catalog](https://catalog.data.gov/organization/dhs-gov)
-- [Privacy](https://www.dhs.gov/privacy-office)
-- [Contact](https://www.dhs.gov/contact-us)
-- [GitHub Organization](https://github.com/cisagov)
-- [JSON-LD](json-ld/department-of-homeland-security-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Vocabulary](vocabulary/department-of-homeland-security-vocabulary.yml)
-- [Capabilities](capabilities/department-of-homeland-security-capabilities.yml)
+- [Blog](https://www.dhs.gov/rss.xml)
+- [GitHub](https://github.com/cisagov)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 45.6 |
+| Contract governance | 13.6 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 18.4 |
+
+**Agent readiness 17.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.7** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/department-of-homeland-security/](https://apis.io/providers/department-of-homeland-security/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Department of Homeland Security: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/department-of-homeland-security/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
